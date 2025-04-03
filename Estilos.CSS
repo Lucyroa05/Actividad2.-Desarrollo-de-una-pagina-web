@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Ribeye&family=Tac+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: "Ribeye", serif;
+    background: linear-gradient(
+        90deg,
+        rgb(241, 14, 173) 0%, 
+        rgb(121, 13, 115) 51%,
+        rgb(236, 135, 223) 100%
+    );  
+}
+
+.container{
+  max-width: 1200px;  
+  margin: 0 auto;
+}
+
+.header{
+   display: flex;
+   align-items: center; 
+   min-height: 70vh;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: rgb(103, 213, 228);
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li{
+    font-size: 18px;
+    padding: 20px;
+    color: blanchedalmond;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: #0c0c0c;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    padding: 150px 0 100px 0;
+}
+
+.header-img{
+    text-align: center;
+}
+
+.header-img h1{
+font-size: 120px;
+line-height: 120px;
+color: rgb(8, 8, 8);
+margin-bottom: 30px;
+font-family:"Ribeye", serif;
+}
+
+.header-img img{
+    width: 600px;
+}
+
+.header-txt{
+    margin: -150px 0 0 --250px;
+    background-color: rgb(230, 46, 86);
+    padding: 55px 70px;
+    width: 500px;
+}
+
+.header-txt h3{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(10, 10, 10);
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 16px;
+    color: black;
+}
+
+.saludmental{
+    padding: 0 0 30px 0;
+    text-align: center;
+}
+
+.saludmental title{
+padding: 0 250px;
+}
+
+h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: antiquewhite;
+    margin-bottom: 20px;
+}
+
+.saludmental-content{
+    margin-top: 40px;
+}
+
+.saludmental-1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.salud mental-img-1, .salud mental-img-2{
+    width: 33%;
+}
+
+.saludmental-img-1 img{
+    width: 120px;
+}
+.saludmental-img-2 img{
+    width: 350px;
+}
+
+.saludmental-txt{
+    width: 33%;
+    text-align: left;
+}
+
+.saludmental-txt h3{
+    color: rgb(12, 12, 12);
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.consejospracticos{
+    padding: 100px 0 250px 0;
+    background-image: linear-gradient(
+        rgba(225, 235, 235, 0.9),
+        rgba(56, 55, 56, 0.9)),
+        url(Salud\ mental_fotos/chica-joven-vista-lateral-hablando-terapeuta_23-2150136592.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+}
+
+.consejospracticos-content{
+    text-align: center;
+    padding: 0 350px;
+}
+
+
+.Blog{
+    padding: 100px 0;
+}
+.Blog-text{
+    text-align: center;
+    padding: 0 250px;
+
+}
+
+.Blog-content{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(Salud\ mental_fotos/cara-sonriente-feliz-amor-emocion-concepto-salud-mental-pensamiento-positivo-mente-actitud-apoyo-autoestima_738732-4722.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: contain;
+padding: 250px 0;
+}
+
+.Blog-1 img{
+    width: 50px;
+}
+
+.Blog-1{
+    padding: 25px;
+    box-shadow: 0 0 40px rgb(0, 0,0,0.2);
+    background-color:rgb(192, 42, 67);
+    width: 450px;
+
+}
+
+.Blog-1 h3{
+    color: #0c0c0c;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.footer{
+    padding: 50px 0 20px 0;
+    border-top: 2px solid rgb(230, 230, 240);
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+}
+
+.link h3{
+    font-size: 20px;
+    color: rgb(245, 239, 239);
+margin-bottom: 15px;
+}
+
+.link a{
+    display: block;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.link a:hover{
+    color: #31ce53;
+}
+
+
+
+
+@media (max-width: 991px) { 
+    .menu{
+        padding: 36px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu ,.navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: aqua;
+        display: none;
+
+       }
+
+       .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header{
+        min-height: 0vh;
+    }
+    .header-content{
+        padding: 100px 30px 30px 30px;
+    }
+
+    .header-img h1{
+        font-size: 70px;
+        line-height: 80px;
+    }
+
+    .header-img img{
+        width: 300px;
+    }
+
+    .header-txt{
+        margin: 0;
+        text-align: center;
+        background-color: #31ce53;
+        padding: 30px;
+        width: 310px;
+    }
+
+    .saludmental{
+        padding: 30px;
+    }
+
+    .saludmental-tittle{
+        padding: 0;
+    }
+
+    h2{
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .saludmental-1{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .saludmental-img-1{
+        width: 100%;
+        
+    }
+
+    
+.saludmental-img-2{
+    width: 100%;
+    order: 3;
+}
+
+.saludmental-img-1 img{
+    width: 80px;
+}
+
+.saludmental-img-2 img{
+    width: 250px;
+}
+
+
+.saludmental-txt{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    order: 1;
+}
+
+
+.consejospracticos{
+    padding: 30px 30px 150px 30px; 
+}
+
+.consejospracticos-content{
+    padding: 0;
+}
+
+.Blog{
+    flex-direction: column;
+}
+
+.Blog-1{
+    width: 100%;
+    text-align: center;
+}
+
+.Blog-1 img{
+    width: 130px;
+    margin: 0 0 10 0;
+}
+
+.Blog{
+    padding: 30px;
+}
+
+.Blog-text{
+    padding: 0;
+}
+
+.Blog-content{
+    flex-direction: column;
+    padding: 30px;
+}
+
+.Blog-1{
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.footer{
+    padding: 30px;
+}
+
+.footer-content{
+    flex-direction: column;
+    text-align: center;
+}
+
+
+}
+
+
+
+
